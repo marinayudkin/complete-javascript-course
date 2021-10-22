@@ -1,0 +1,23 @@
+const person = {
+  name: "Anna",
+  yearBorn: 1992,
+  likeSports: false,
+  pets:['dog', 'cat', 'elephant'] 
+}
+
+function readPersonMind(person){
+  let message = `Welcome ${person.name}!
+  I can tell by my mysterious powers that your name is spelt with ${person.name.length} letters,
+  you are ${2020 - person.yearBorn} years old,
+  you ${!person.likeSports ? "don't" : ""} like sports and have ${person.pets.length} pets.`
+  return message;
+}
+
+console.log(readPersonMind(person));
+
+/*
+Welcome Anna!
+I can tell by my mysterious powers that your name is spelt with 4 letters,
+you are 28 years old,
+you like sports, and have 3 pets.
+*/
